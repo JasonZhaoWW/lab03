@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二页 - 页面跳转演示</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-globe"></i> 第二页</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">返回首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="page2.html">第二页</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="mb-0"><i class="bi bi-check-circle"></i> 页面跳转成功！</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-success" role="alert">
+                            <h4 class="alert-heading">恭喜！</h4>
+                            <p>你已经成功从首页跳转到第二页，这演示了HTML中的页面导航功能。</p>
+                            <hr>
+                            <p class="mb-0">这是应用层HTTP协议的基本应用之一。</p>
+                        </div>
+
+                        <h4 class="mt-4">关于页面跳转</h4>
+                        <p>在Web应用中，页面跳转是通过以下方式实现的：</p>
+                        <ul>
+                            <li><strong>超链接（&lt;a&gt;标签）</strong>：最常见的跳转方式</li>
+                            <li><strong>表单提交</strong>：通过form标签的action属性</li>
+                            <li><strong>JavaScript</strong>：使用window.location等方法</li>
+                            <li><strong>HTTP重定向</strong>：服务器端的301/302状态码</li>
+                        </ul>
+
+                        <h4 class="mt-4">HTTP请求过程</h4>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <ol>
+                                    <li>用户点击链接</li>
+                                    <li>浏览器发送HTTP GET请求</li>
+                                    <li>服务器接收请求并处理</li>
+                                    <li>服务器返回HTML文档（200 OK）</li>
+                                    <li>浏览器解析并渲染页面</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+                            <a href="index.html" class="btn btn-primary btn-lg">
+                                <i class="bi bi-arrow-left"></i> 返回首页
+                            </a>
+                            <a href="javascript:history.back()" class="btn btn-secondary btn-lg">
+                                <i class="bi bi-arrow-counterclockwise"></i> 浏览器后退
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 额外信息卡片 -->
+                <div class="row mt-4 g-3">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="bi bi-speedometer2 display-4 text-primary"></i>
+                                <h5 class="card-title mt-2">快速</h5>
+                                <p class="card-text">静态页面加载速度快</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="bi bi-shield-check display-4 text-success"></i>
+                                <h5 class="card-title mt-2">安全</h5>
+                                <p class="card-text">无需后端处理</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="bi bi-phone display-4 text-info"></i>
+                                <h5 class="card-title mt-2">响应式</h5>
+                                <p class="card-text">适配各种设备</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2024 计算机网络应用层学习项目</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

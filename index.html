@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页基本功能展示 - 应用层学习</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-globe"></i> 应用层功能展示</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-item active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">第二页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#links">链接功能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#media">媒体展示</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 头部横幅 -->
+
+    <!-- 主要内容 -->
+    <main class="container my-5">
+        
+        <!-- 链接功能区 -->
+        <section id="links" class="mb-5">
+            <h2 class="mb-4"><i class="bi bi-link-45deg"></i> 超链接功能</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">内部链接</h5>
+                            <p class="card-text">跳转到本网站的其他页面</p>
+                            <a href="page2.html" class="btn btn-primary">访问第二页</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">外部链接</h5>
+                            <p class="card-text">跳转到外部网站</p>
+                            <a href="https://bjtu.edu.cn/" target="_blank" class="btn btn-success">访问北交大</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">锚点链接</h5>
+                            <p class="card-text">跳转到页面内的特定位置</p>
+                            <a href="#form" class="btn btn-info">跳转到表单部分</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 图片展示区 -->
+        <section id="images" class="mb-5">
+            <h2 class="mb-4"><i class="bi bi-image"></i> 图片展示</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="images/image1.jpg" class="card-img-top" alt="示例图片1">
+                        <div class="card-body">
+                            <h5 class="card-title">本地图片示例</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="https://cn.bing.com/th?id=OHR.IrohazakaAutumn_ZH-CN8146412245_UHD.jpg&pid=hp&w=1920" class="card-img-top" alt="示例图片2">
+                        <div class="card-body">
+                            <h5 class="card-title">网络图片示例</h5>
+                            <p class="card-text">通过URL引用的外部图片资源</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 音视频展示区 -->
+        <section id="media" class="mb-5">
+            <h2 class="mb-4"><i class="bi bi-play-circle"></i> 音视频播放</h2>
+            
+            <!-- 音频播放器 -->
+            <div class="card mb-4">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="bi bi-music-note"></i> 音频播放器</h5>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted">HTML5 audio 标签示例</p>
+                    <audio controls class="w-100">
+                        <source src="media/audio.mp3" type="audio/mpeg">
+                        <source src="media/audio.ogg" type="audio/ogg">
+                        您的浏览器不支持音频播放。
+                    </audio>
+                </div>
+            </div>
+
+            <!-- 视频播放器 -->
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="mb-0"><i class="bi bi-camera-video"></i> 视频播放器</h5>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted">HTML5 video 标签示例</p>
+                    <video controls class="w-100" style="max-height: 800px;">
+                        <source src="media/video.mp4" type="video/mp4">
+                        <source src="media/video.webm" type="video/webm">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- 表格展示 -->
+        <section id="table" class="mb-5">
+            <h2 class="mb-4"><i class="bi bi-table"></i> 表格展示</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">HTTP状态码示例</h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>状态码</th>
+                                    <th>含义</th>
+                                    <th>说明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>200</td>
+                                    <td>OK</td>
+                                    <td>请求成功</td>
+                                </tr>
+                                <tr>
+                                    <td>301</td>
+                                    <td>Moved Permanently</td>
+                                    <td>永久重定向</td>
+                                </tr>
+                                <tr>
+                                    <td>404</td>
+                                    <td>Not Found</td>
+                                    <td>资源未找到</td>
+                                </tr>
+                                <tr>
+                                    <td>500</td>
+                                    <td>Internal Server Error</td>
+                                    <td>服务器内部错误</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 列表展示 -->
+        <section id="lists" class="mb-5">
+            <h2 class="mb-4"><i class="bi bi-list-ul"></i> 列表展示</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">无序列表</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">HTTP协议</li>
+                                <li class="list-group-item">HTTPS协议</li>
+                                <li class="list-group-item">FTP协议</li>
+                                <li class="list-group-item">SMTP协议</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">有序列表</h5>
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">应用层</li>
+                                <li class="list-group-item">传输层</li>
+                                <li class="list-group-item">网络层</li>
+                                <li class="list-group-item">数据链路层</li>
+                                <li class="list-group-item">物理层</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 表单展示 -->
+        <section id="form" class="mb-5">
+            <h2 class="mb-4"><i class="bi bi-input-cursor"></i> 表单功能</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">示例表单</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">姓名</label>
+                            <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">邮箱</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">留言</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">提交</button>
+                        <button type="reset" class="btn btn-secondary">重置</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
